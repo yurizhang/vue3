@@ -5,7 +5,20 @@
   </div>
   <router-view/>
 </template>
-
+<script>
+export default {
+  name:"APP",
+  created(){
+    console.log("created")
+    this.$eventBus.$on('change-bread-crumbs', (parames) => {
+        console.log(parames);  // is a rest array
+    }); 
+  },
+  mounted(){
+    console.log(this.$trend.welcome());
+  }
+}
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
