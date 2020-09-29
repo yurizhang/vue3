@@ -4,7 +4,7 @@
 
 3.有了Composition API基本上不需要使用vuex了，但是某种情况 下vuex还是比较好用的。vue3的provide和inject数据回溯不容易去debug.
 
- 
+4. see detail: https://www.cnblogs.com/yuri2016/p/13750682.html
 
 使用vue-cli4.5以下，生成一个javascript项目：
 
